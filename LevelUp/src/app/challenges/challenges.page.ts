@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Challenge} from '../models/Challenge';
+import {ChallengeServiceProvider} from '../providers/challenge-service/challenge-service';
 
 @Component({
   selector: 'app-challenges',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./challenges.page.scss'],
 })
 export class ChallengesPage implements OnInit {
-
-  constructor() { }
+  private challenges: Challenge[];
 
   ngOnInit() {
   }
+
+  constructor( private challengeServiceProvider: ChallengeServiceProvider) {
+    this.challengeServiceProvider.getChallenges().then((challenges => this.challenges = challenges));
+   }
+
 
 }
