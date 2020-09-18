@@ -1,4 +1,4 @@
-class Info {
+export class Info {
     id: number;
     title: string;
     shortDescription: string;
