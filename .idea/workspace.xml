@@ -20,22 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community.page.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/analytics/analytics.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/community/community.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/models/info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/models/Tip.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +58,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\Joel\Documents\GitHub\LevelUp\LevelUp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600441778268</updated>
       <workItem from="1600441779522" duration="3571000" />
-      <workItem from="1600456038545" duration="605000" />
+      <workItem from="1600456038545" duration="1678000" />
+      <workItem from="1600457873344" duration="6502000" />
     </task>
     <servers />
   </component>
@@ -88,11 +91,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="987" y="299" width="585" height="801" key="find.popup" timestamp="1600456472188">
+    <state x="1037" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600458377442">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="299" width="585" height="801" key="find.popup/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600456472188" />
+    <state x="1037" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600458377442" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1600458725488">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600458725488" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1600458724644">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600458724644" />
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600460299448">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600460299448" />
+    <state x="1661" y="299" width="585" height="801" key="find.popup" timestamp="1600461089417">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1661" y="299" width="585" height="801" key="find.popup/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600461089417" />
   </component>
 </project>
