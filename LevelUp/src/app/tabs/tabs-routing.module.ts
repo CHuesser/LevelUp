@@ -20,8 +20,8 @@ const routes: Routes = [
         loadChildren: () => import('../tips/tips.module').then(m => m.TipsPageModule)
       },
       {
-        path: 'analytics',
-        loadChildren: () => import('../analytics/analytics.module').then(m => m.AnalyticsPageModule)
+        path: 'community',
+        loadChildren: () => import('../community/community.module').then(m => m.CommunityPageModule)
       },
       {
         path: 'settings',

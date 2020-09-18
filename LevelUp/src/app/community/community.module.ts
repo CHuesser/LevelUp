@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AnalyticsPageRoutingModule } from './analytics-routing.module';
+import { CommunityPageRoutingModule } from './community-routing.module';
 
-import { AnalyticsPage } from './analytics.page';
+import { CommunityPage } from './community.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AnalyticsPageRoutingModule
+    CommunityPageRoutingModule
   ],
-  declarations: [AnalyticsPage]
+  declarations: [CommunityPage]
 })
-export class AnalyticsPageModule {}
+export class CommunityPageModule {}
