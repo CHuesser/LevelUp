@@ -1,7 +1,5 @@
-import { Injectable } from '@angular/core';
-import { rejects } from 'assert';
-import { resolve } from 'dns';
-import { User } from '../../models/user';
+import {Injectable} from '@angular/core';
+import {User} from '../../models/user';
 
 const users: User[] = [
     {
@@ -9,7 +7,7 @@ const users: User[] = [
         name: 'Beck',
         diabotchiName: 'BamBamTheDumDum',
         level: 1,
-        friendIds: [1,2,3],
+        friendIds: [1, 2, 3],
         groupIds: [],
         challengeIds: [],
     },
@@ -18,7 +16,7 @@ const users: User[] = [
         name: 'JB',
         diabotchiName: 'Cow',
         level: 10,
-        friendIds: [2,3],
+        friendIds: [2, 3],
         groupIds: [],
         challengeIds: [],
     },
@@ -27,7 +25,7 @@ const users: User[] = [
         name: 'Dea',
         diabotchiName: 'Bubbles',
         level: 11,
-        friendIds: [0,1,3],
+        friendIds: [0, 1, 3],
         groupIds: [],
         challengeIds: [],
     },
@@ -36,11 +34,11 @@ const users: User[] = [
         name: 'Captain',
         diabotchiName: 'Tobi',
         level: 13,
-        friendIds: [0,1,2],
+        friendIds: [0, 1, 2],
         groupIds: [],
         challengeIds: [],
     },
-]
+];
 
 @Injectable()
 export class UserServiceProvider {
@@ -53,11 +51,11 @@ export class UserServiceProvider {
     }
 
     getUser(userId: number): Promise<User> {
-        return new Promise((resolve, reject) => resolve(users.find(u => u.id == userId)))
+        return new Promise((resolve, reject) => resolve(users.find(u => u.id === userId)));
     }
 
     getFriends(user: User): Promise<User[]> {
-        let fwends = users.filter(u => user.friendIds.includes(u.id))
+        const fwends = users.filter(u => user.friendIds.includes(u.id));
 
         return new Promise((resolve, reject) => resolve(fwends));
     }
