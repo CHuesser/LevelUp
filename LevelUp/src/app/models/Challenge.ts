@@ -5,6 +5,7 @@ export class Challenge {
     image: string;
     type: ChallengeType;
     status: ChallengeStatus;
+    category: ChallengeCategory;
     participants: number[];
 }
 
@@ -19,4 +20,11 @@ export enum ChallengeStatus {
     created,
     running,
     finished,
+}
+
+export enum ChallengeCategory {
+    health,
+    sustainability,
+    money,
+    various
 }
