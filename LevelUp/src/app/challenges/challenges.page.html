@@ -1,16 +1,15 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>challenges</ion-title>
+        <ion-title>New Challenges</ion-title>
     </ion-toolbar>
 
     <div class="bar bar-subheader">
-
         <div class="button-bar">
-            <ion-button class="button filter-button" id="filter_0" (click)="removeAddFilter(0)">Health</ion-button>
-            <ion-button class="button filter-button" id="filter_1" (click)="removeAddFilter(1)">Sustainability
+            <ion-button class="button filter-button" id="filter_0"  color="danger" (click)="removeAddFilter(0)"><ion-icon class="filter-icon" name="pulse-outline"></ion-icon></ion-button>
+            <ion-button class="button filter-button" id="filter_1" color="success" (click)="removeAddFilter(1)"><ion-icon class="filter-icon" name="leaf-outline"></ion-icon>
             </ion-button>
-            <ion-button class="button filter-button" id="filter_2" (click)="removeAddFilter(2)">Wealth</ion-button>
-            <ion-button class="button filter-button" id="filter_3" (click)="removeAddFilter(3)">Various</ion-button>
+            <ion-button class="button filter-button" id="filter_2" color="warning" (click)="removeAddFilter(2)"><ion-icon class="filter-icon" name="server-outline"></ion-icon></ion-button>
+            <ion-button class="button filter-button" id="filter_3" color="tertiary" (click)="removeAddFilter(3)"><ion-icon class="filter-icon" name="ellipsis-horizontal-outline"></ion-icon></ion-button>
         </div>
 
     </div>
@@ -23,5 +22,4 @@
             <img src="{{challenge.image}}"/>
         </div>
     </ion-card>
-
 </ion-content>
