@@ -5,8 +5,21 @@
 </ion-header>
 
 <ion-content>
-<ion-title>Home</ion-title>
-
-
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">{{me?.name}}</ion-card-title>
+      <ion-card-subtitle>Level: {{me?.level}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-list>
+    <ion-list-header>
+      <ion-label color="secondary">Friends</ion-label>
+    </ion-list-header>
+    <ion-card *ngFor="let user of friends">
+      <ion-card-header>
+        <ion-card-title>{{user.name}}</ion-card-title>
+        <ion-card-subtitle>Level: {{user.level}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
 </ion-content>
