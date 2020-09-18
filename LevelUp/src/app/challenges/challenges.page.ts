@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {Challenge} from '../models/Challenge';
+import { Component, OnInit } from '@angular/core';
+import {Challenge} from '../models/challenge';
+
 import {ChallengeServiceProvider} from '../providers/challenge-service/challenge-service';
 
 @Component({
@@ -20,7 +21,7 @@ export class ChallengesPage implements OnInit {
             this.challenges = challenges;
             this.filteredChallenges = challenges;
         }));
-        this.filterargs = [0, 1];
+        this.filterargs = [0, 1, 2, 3];
     }
 
     removeAddFilter(filter: number) {

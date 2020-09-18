@@ -10,6 +10,7 @@ export class Challenge {
 }
 
 export enum ChallengeType {
+    none,
     daily,
     ego,
     duo,
@@ -17,6 +18,7 @@ export enum ChallengeType {
 }
 
 export enum ChallengeStatus {
+    none,
     created,
     running,
     finished,

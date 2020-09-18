@@ -23,8 +23,8 @@ const routes: Routes = [
     loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   },
   {
-    path: 'analytics',
-    loadChildren: () => import('./analytics/analytics.module').then( m => m.AnalyticsPageModule)
+    path: 'community',
+    loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
   }
 ];
 @NgModule({

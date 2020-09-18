@@ -7,7 +7,8 @@
 
         <div class="button-bar">
             <ion-button class="button filter-button" id="filter_0" (click)="removeAddFilter(0)">Health</ion-button>
-            <ion-button class="button filter-button" id="filter_1" (click)="removeAddFilter(1)">Sustainability</ion-button>
+            <ion-button class="button filter-button" id="filter_1" (click)="removeAddFilter(1)">Sustainability
+            </ion-button>
             <ion-button class="button filter-button" id="filter_2" (click)="removeAddFilter(2)">Wealth</ion-button>
             <ion-button class="button filter-button" id="filter_3" (click)="removeAddFilter(3)">Various</ion-button>
         </div>
@@ -16,12 +17,8 @@
 </ion-header>
 
 <ion-content>
-
-
-
     <ion-card *ngFor="let challenge of filteredChallenges">
         <div class="card-title">{{challenge.title}}</div>
-
         <div class="tint">
             <img src="{{challenge.image}}"/>
         </div>
