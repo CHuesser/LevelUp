@@ -8,7 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ChallengeServiceProvider} from './providers/challenge-service/challenge-service';
+import { ChallengeServiceProvider } from './providers/challenge-service/challenge-service';
+import { UserServiceProvider } from './providers/user-service/user-service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import {ChallengeServiceProvider} from './providers/challenge-service/challenge-
     StatusBar,
     SplashScreen,
     ChallengeServiceProvider,
+    UserServiceProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
