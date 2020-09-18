@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Tip } from '../models/Tip';
+import {TipServiceProvider} from '../providers/tip-service/tip-service';
 
 @Component({
   selector: 'app-tips',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tips.page.scss'],
 })
 export class TipsPage implements OnInit {
-
-  constructor() { }
+  private tips: Tip[];
 
   ngOnInit() {
+  }
+
+  constructor( private tipServiceProvider: TipServiceProvider) {
+    this.tipServiceProvider.getTips().then((tips => this.tips = tips));
   }
 
 }
