@@ -8,8 +8,10 @@
 
   <ion-card *ngFor="let tip of tips">
     <div class="card-title">{{tip.title}}</div>
-    <div class="card-shortDescription">{{tip.shortDescription}}</div>
     <div class="card-description">{{tip.description}}</div>
+    <div class="tint">
+      <img src="{{tip.image}}"/>
+    </div>
 
   </ion-card>
 

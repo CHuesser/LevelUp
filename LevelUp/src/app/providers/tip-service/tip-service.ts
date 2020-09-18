@@ -25,7 +25,7 @@ export class TipServiceProvider {
                 {
                     id: 3,
                     title: 'Increase Fruits and Vegetables',
-                    description: 'Fruits and vegetables contain important antioxidants and phytochemicals that help protect your heart. Choose a variety of fruits and vegetables of your diet.',
+                    description: 'Fruits and vegetables contain important antioxidants and phytochemicals that help protect your heart. Choose a variety of fruits and vegetables for your diet.',
                     category: [TipCategory.health],
                     image: 'todo'
                 },

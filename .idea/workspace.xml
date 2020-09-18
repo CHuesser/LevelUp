@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/models/info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/models/Tip.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
       <updated>1600441778268</updated>
       <workItem from="1600441779522" duration="3571000" />
       <workItem from="1600456038545" duration="1678000" />
-      <workItem from="1600457873344" duration="6502000" />
+      <workItem from="1600457873344" duration="7941000" />
     </task>
     <servers />
   </component>
