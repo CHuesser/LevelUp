@@ -7,8 +7,7 @@ const users: User[] = [
         name: 'Beck',
         diabotchiName: 'BamBamTheDumDum',
         level: 1,
-        friendIds: [1, 2, 3],
-        groupIds: [],
+        friendIds: [1,2,3],
         challengeIds: [],
     },
     {
@@ -16,8 +15,7 @@ const users: User[] = [
         name: 'JB',
         diabotchiName: 'Cow',
         level: 10,
-        friendIds: [2, 3],
-        groupIds: [],
+        friendIds: [2,3],
         challengeIds: [],
     },
     {
@@ -25,8 +23,7 @@ const users: User[] = [
         name: 'Dea',
         diabotchiName: 'Bubbles',
         level: 11,
-        friendIds: [0, 1, 3],
-        groupIds: [],
+        friendIds: [0,1,3],
         challengeIds: [],
     },
     {
@@ -34,8 +31,7 @@ const users: User[] = [
         name: 'Captain',
         diabotchiName: 'Tobi',
         level: 13,
-        friendIds: [0, 1, 2],
-        groupIds: [],
+        friendIds: [0,1,2],
         challengeIds: [],
     },
 ];

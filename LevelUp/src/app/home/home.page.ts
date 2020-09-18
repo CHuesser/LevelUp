@@ -9,14 +9,11 @@ import { UserServiceProvider} from '../providers/user-service/user-service';
 })
 export class HomePage implements OnInit {
     private me: User;
-    private friends: User[];
   
     ngOnInit() { }
   
     constructor( private userServiceProvider: UserServiceProvider) {
-        this.userServiceProvider.getUser(0)
-            .then(me => this.me = me)
-            .then(_ => this.userServiceProvider.getFriends(this.me)
-                .then(users => this.friends = users));
+        this.userServiceProvider.getUser(3)
+            .then(me => this.me = me);
     }  
 }

@@ -3,7 +3,6 @@ export class User {
     name: string;
     level: number;
     friendIds: number[];
-    groupIds: number[]; 
     challengeIds: number[];
     diabotchiName: string;
 }
