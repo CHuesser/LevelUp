@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LevelUp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/HappyBear.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LevelUp/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,47 +36,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/models/BearState.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+            <state relative-caret-position="460">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#ion-content#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.module.ts">
+        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="163">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,10 +106,10 @@
         <option value="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/models/BearState.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" />
-        <option value="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" />
-        <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts" />
+        <option value="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" />
+        <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" />
       </list>
     </option>
   </component>
@@ -169,15 +148,15 @@
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,6 +183,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LevelUp/src/assets/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/LevelUp/src/assets/images" />
       <recent name="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service" />
@@ -241,13 +223,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33237000" />
+    <option name="totallyTimeSpent" value="33401000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1051" height="966" extended-state="0" />
+    <frame x="0" y="23" width="1401" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2631068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28985506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -260,7 +242,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2665904" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2665904" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,7 +312,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/LevelUp/src/app/foodsearchresult/foodsearchresult.page.ts</url>
           <line>20</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -598,13 +579,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/challenge-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/challenge-service.ts" />
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/models/FoodItemDetails.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -653,19 +628,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts">
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
+        <state relative-caret-position="204">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -673,23 +648,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts">
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="163">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        <state relative-caret-position="460">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#ion-content#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

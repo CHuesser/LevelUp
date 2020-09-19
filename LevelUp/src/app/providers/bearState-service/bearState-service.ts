@@ -14,7 +14,7 @@ export class BearStateServiceProvider {
                 {
                     state: 0,
                     text: 'I am super happy at the moment, keep on going this way!',
-                    dataPath: './assets/images/Happy_Beary.png',
+                    dataPath: './assets/images/HappyBear.gif',
                 },
                 {
                     state: 1,
