@@ -11,6 +11,7 @@ export class TipsPage implements OnInit {
   private tips: Tip[];
   private filteredTips: Tip[];
   private filterArgs: number[];
+  private buttonColors: string[];
 
   ngOnInit() {
   }
@@ -21,22 +22,21 @@ export class TipsPage implements OnInit {
       this.filteredTips = tips;
     }));
     this.filterArgs = [0, 1, 2, 3];
+    this.buttonColors = ['danger', 'success', 'warning', 'tertiary'];
   }
   removeAddFilter(filter: number) {
     const index = this.filterArgs.indexOf(filter);
 
     if (index !== -1) {
       this.filterArgs.splice(index, 1);
-      document.getElementById('tipFilter_' + filter).setAttribute('color', 'medium');
+      document.getElementById('tipFilter_' + filter).classList.add('deactivated-filter');
     } else {
       this.filterArgs.push(filter);
-      document.getElementById('tipFilter_' + filter).removeAttribute('color');
+      document.getElementById('tipFilter_' + filter).classList.remove('deactivated-filter');
 
     }
-    console.log(this.filterArgs);
-    console.log(this.tips);
-
-    this.filteredTips = this.tips.filter(item => this.filterArgs.indexOf(item.category) !== -1);
-    console.log(this.filteredTips);
+    this.filteredTips = this.tips.filter(item => this.filterArgs.some(item2 => item.category.includes(item2)));
   }
+
+
 }
