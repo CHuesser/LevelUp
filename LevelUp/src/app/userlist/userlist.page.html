@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-back-button slot='start'></ion-back-button>
+    <ion-button slot='start'(click)="closeUserlist()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
     <ion-title>Add Friends</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,7 +20,7 @@
           </ion-col>
           <ion-col>
             <ion-card-content>
-              <ion-button slot="end" (click)="addFriend(user.id)" [disabled]="disableButton">
+              <ion-button slot="end" (click)="addFriend(user.id)">
                 <ion-icon name="person-add-outline"></ion-icon>
               </ion-button>
             </ion-card-content>

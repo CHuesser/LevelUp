@@ -4,6 +4,9 @@ import { Group } from '../models/group';
 import { User } from '../models/user';
 import { GroupServiceProvider } from '../providers/group-service/group-service';
 import { UserServiceProvider} from '../providers/user-service/user-service';
+import { ModalController } from '@ionic/angular';
+import {ModalPagePage} from '../modal-page/modal-page.page';
+import { UserlistPage } from '../userlist/userlist.page';
 
 @Component({
     selector: 'app-community',
@@ -22,11 +25,17 @@ export class CommunityPage implements OnInit {
         this.updateGroupList();
     }
 
-    constructor( private userServiceProvider: UserServiceProvider, private groupServiceProvider: GroupServiceProvider) {
+    constructor( private userServiceProvider: UserServiceProvider, private groupServiceProvider: GroupServiceProvider, public modalCtrl: ModalController) {
         this.userServiceProvider.getUser(0)
             .then(me => this.me = me)
             .then(_ => this.updateFriendList())
             .then(_ => this.updateGroupList());
+    }
+
+    removeFriend(userId) {
+        let index = this.me.friendIds.indexOf(userId);
+        this.me.friendIds.splice(index, 1);
+        this.updateFriendList();
     }
 
     updateFriendList() {
@@ -37,5 +46,18 @@ export class CommunityPage implements OnInit {
     updateGroupList() {
         this.groupServiceProvider.getGroupsToUser(this.me)
             .then(groups => this.groups = groups);
+    }
+
+    async openUserlist() {
+        let userlistPage = await this.modalCtrl.create({
+            component: UserlistPage
+        });
+
+        userlistPage.onWillDismiss()
+            .then((data) => {
+                this.updateFriendList();
+            });
+
+        return await userlistPage.present();
     }
 }
