@@ -24,17 +24,43 @@
   </div>
 
   <ion-list>
+    <ion-list-header lines="full">
+      <ion-label>
+        EXERCISES
+      </ion-label>
+    </ion-list-header>
     <ion-item>
-      <ion-card-subtitle>EXERCISES</ion-card-subtitle>
-    </ion-item>
-    <ion-item>
+      <ion-toggle slot="end" (ionChange)="toggleAddExcersice()"></ion-toggle>
       <ion-label>Add excercise</ion-label>
-      <ion-buttons>
-        <ion-button color="tertiary">
-          <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
-        </ion-button>
-      </ion-buttons>
     </ion-item>
+    <ion-item  [(hidden)]='addExerciseHidden'>
+      <ion-input [(ngModel)]="duration" placeholder="Duration"></ion-input>
+    </ion-item>
+    <ion-item  [(hidden)]='addExerciseHidden'>
+      <ion-input [(ngModel)]="calories" placeholder="Calories"></ion-input>
+    </ion-item>
+    <ion-item  [(hidden)]='addExerciseHidden'>
+      <ion-label>ExerciseType</ion-label>
+      <ion-select [(ngModel)]="selectedType">
+        <ion-select-option *ngFor="let enum of exerciseTypes()" value="{{enum}}">{{enum}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button (click)="addExercise()" [(hidden)]='addExerciseHidden' expand="block">
+      <ion-icon name="save-outline"></ion-icon>
+    </ion-button>
   </ion-list>
-
+  <ion-list>
+    <ion-list-header lines="full">
+      <ion-label>
+        Registered excercises
+      </ion-label>
+    </ion-list-header>
+    <ion-card *ngFor="let ex of exercises">
+      <ion-card-header>
+        <ion-card-subtitle>Type: {{exerciseType[ex.type]}}</ion-card-subtitle>
+        <ion-card-subtitle>Duration: {{ex.duration}}</ion-card-subtitle>
+        <ion-card-subtitle>Calories: {{ex.calories}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
 </ion-content>
