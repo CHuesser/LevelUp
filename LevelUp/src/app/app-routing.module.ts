@@ -75,8 +75,8 @@ const routes: Routes = [
     loadChildren: () => import('./community-creategroup/community-creategroup.module').then( m => m.CommunityCreategroupPageModule)
   },
   {
-  	path: 'home-tracksustainability',
-  	loadChildren: () => import('./home-tracksustainability/home-tracksustainability.module').then( m => m.HomeTracksustainabilityPageModule)
+    path: 'home-tracksustainability',
+    loadChildren: () => import('./home-tracksustainability/home-tracksustainability.module').then( m => m.HomeTracksustainabilityPageModule)
   }];
 
 @NgModule({
