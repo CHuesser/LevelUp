@@ -1,17 +1,19 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-import { ChallengesPage } from './challenges.page';
+import {ChallengesPage} from './challenges.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ChallengesPage
-  }
+    {
+        path: '',
+        component: ChallengesPage
+    }
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule],
 })
-export class ChallengesPageRoutingModule {}
+export class ChallengesPageRoutingModule {
+}

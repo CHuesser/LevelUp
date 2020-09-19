@@ -23,7 +23,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 1,
                     title: 'Take stairs',
-                    description: '',
+                    description: 'Challenge to take more stairs.',
                     image: './assets/images/steps-388914_640.jpg',
                     category: 0,
                     type: ChallengeType.none,
@@ -33,7 +33,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 2,
                     title: 'Take the bike',
-                    description: '',
+                    description: 'Challenge to take the bike.',
                     image: './assets/images/bicycle-1209682_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
@@ -43,7 +43,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 3,
                     title: 'Make Yoga',
-                    description: '',
+                    description: 'Challenge to make more yoga.',
                     image: './assets/images/yoga-pose-1082172_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
@@ -53,7 +53,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 4,
                     title: 'Eat more Fruit',
-                    description: '',
+                    description: 'Challenge to eat more fruits.',
                     image: './assets/images/apples-918953_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
@@ -63,7 +63,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 5,
                     title: 'Spend less Money',
-                    description: '',
+                    description: 'Challenge to spend less money',
                     image: './assets/images/money-2180330_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
@@ -73,7 +73,7 @@ export class ChallengeServiceProvider {
                 {
                     id: 6,
                     title: 'Take the train',
-                    description: '',
+                    description: 'Challenge to take the train instead of the car.',
                     image: './assets/images/railway-62849_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
