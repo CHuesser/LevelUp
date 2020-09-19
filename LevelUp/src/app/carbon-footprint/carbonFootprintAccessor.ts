@@ -1,4 +1,5 @@
-import { CarbonFootprintArgs };
+import {CarbonFootprintArgs} from "./carbonFootprintArgs";
+
 
 export class CarbonFootprintAccessor {
     apiPrefix = 'https://api.triptocarbon.xyz/v1/footprint?';
