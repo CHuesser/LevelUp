@@ -30,7 +30,7 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary">
+        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -44,7 +44,7 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary">
+        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -58,7 +58,7 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary">
+        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -72,17 +72,11 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary">
+        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
     </ion-item>
   </ion-list>
-
-
-  <ion-input type="text" [(ngModel)]="fooditem">
-
-  </ion-input>
-  <ion-button (click)="getAllFood()">Search</ion-button>
 
 </ion-content>

@@ -53,6 +53,14 @@ const routes: Routes = [
   {
     path: 'home-sleepanalysis',
     loadChildren: () => import('./home-sleepanalysis/home-sleepanalysis.module').then( m => m.HomeSleepanalysisPageModule)
+  },
+  {
+    path: 'foodsearch',
+    loadChildren: () => import('./foodsearch/foodsearch.module').then( m => m.FoodsearchPageModule)
+  },
+  {
+    path: 'foodsearchresult/:id',
+    loadChildren: () => import('./foodsearchresult/foodsearchresult.module').then( m => m.FoodsearchresultPageModule)
   }
 ];
 @NgModule({

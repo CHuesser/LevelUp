@@ -18,7 +18,7 @@ export class TipServiceProvider {
                 {
                     id: 1,
                     title: 'Reduce Salt Intake',
-                    description: 'High salt intake can increase your blood pressure levels and put you at risk of heart disease. Limit your intake by avoiding processed foods.',
+                    description: 'High salt intake can increase your blood pressure levels and put you at risk of heart disease. Limit your intake by avoiding processed result.',
                     category: [TipCategory.health],
                     image: 'todo'
                 },
