@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot='start'(click)="closeGrouplist()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Join Groups</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <ion-list>
+    <ion-card *ngFor="let group of nonJoinedGroups">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <ion-card-header>
+              <ion-card-title>{{group.name}}</ion-card-title>
+              <ion-card-subtitle>{{group.description}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-col>
+          <ion-col>
+            <ion-card-content>
+              <ion-button slot="end" (click)="joinGroup(group.id)">
+                <ion-icon name="log-in-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="addButton" (click)="openCreateGroup()">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="add-circle-outline" class="greyedOut"></ion-icon>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+</ion-content>

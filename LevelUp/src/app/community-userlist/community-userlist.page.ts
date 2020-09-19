@@ -5,11 +5,11 @@ import { UserServiceProvider } from '../providers/user-service/user-service';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-userlist',
-  templateUrl: './userlist.page.html',
-  styleUrls: ['./userlist.page.scss'],
+  selector: 'app-community-userlist',
+  templateUrl: './community-userlist.page.html',
+  styleUrls: ['./community-userlist.page.scss'],
 })
-export class UserlistPage implements OnInit {
+export class CommunityUserlistPage implements OnInit {
   private me: User;
   private nonFriends: User[];
 
