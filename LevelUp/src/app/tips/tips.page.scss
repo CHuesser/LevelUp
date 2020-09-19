@@ -1,3 +1,20 @@
+.filter-button{
+  margin: 0.2em;
+  height: 50px;
+}
+ion-toolbar{
+  text-align: center;
+}
+
+.filter-icon{
+  color: black;
+}
+.button-bar{
+  margin: 0 1em 0 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
 .deactivated-filter{
   opacity: 40%;
 }

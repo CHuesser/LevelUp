@@ -18,8 +18,27 @@
 
   <ion-card *ngFor="let tip of filteredTips">
     <div class="card-title">{{tip.title}}</div>
+    <ion-card-content>
+      <div class="tipImageContainer">
+        <img src="{{tip.image}}"/>
+      </div>
     <div class="card-description">{{tip.description}}</div>
+    </ion-card-content>
 
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>{{tip.likes}} Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <div>{{tip.comments}} Comments</div>
+        </button>
+      </ion-col>
+    </ion-row>
   </ion-card>
 
 </ion-content>
