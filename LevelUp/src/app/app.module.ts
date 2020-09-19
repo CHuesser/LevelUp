@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { TipServiceProvider } from './providers/tip-service/tip-service';
 import { ChallengeServiceProvider } from './providers/challenge-service/challenge-service';
 import { UserServiceProvider } from './providers/user-service/user-service';
+import { GroupServiceProvider } from './providers/group-service/group-service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { UserServiceProvider } from './providers/user-service/user-service';
     ChallengeServiceProvider,
     TipServiceProvider,
     UserServiceProvider,
+    GroupServiceProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

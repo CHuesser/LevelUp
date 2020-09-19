@@ -14,7 +14,7 @@ export class ChallengeServiceProvider {
                     id: 0,
                     title: 'Walk 10000 Steps',
                     description: 'Daily challenge to walk 10000 steps.',
-                    image: './assets/images/steps-388914_640.jpg',
+                    image: './assets/images/walk-2635038_640.jpg',
                     type: ChallengeType.none,
                     status: ChallengeStatus.none,
                     category: 0,
