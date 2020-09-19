@@ -13,6 +13,7 @@ import {TipServiceProvider} from './providers/tip-service/tip-service';
 import {UserServiceProvider} from './providers/user-service/user-service';
 import {GroupServiceProvider} from './providers/group-service/group-service';
 import {ScoreServiceProvider} from './providers/score-service/score-service';
+import {StoredFoodServiceProvider} from './providers/stored-food-service/stored-food-service';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {ScoreServiceProvider} from './providers/score-service/score-service';
     TipServiceProvider,
     UserServiceProvider,
     GroupServiceProvider,
+      StoredFoodServiceProvider,
       ScoreServiceProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
