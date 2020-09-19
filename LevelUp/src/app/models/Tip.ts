@@ -4,6 +4,8 @@ export class Tip {
     description: string;
     category: TipCategory[];
     image: string;
+    likes: number;
+    comments: number;
 }
 
 export enum TipCategory {

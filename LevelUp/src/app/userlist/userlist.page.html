@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot='start'(click)="closeUserlist()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Add Friends</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <ion-list>
+    <ion-card *ngFor="let user of nonFriends">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <ion-card-header>
+              <ion-card-title>{{user.name}}</ion-card-title>
+              <ion-card-subtitle>Level: {{user.level}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-col>
+          <ion-col>
+            <ion-card-content>
+              <ion-button slot="end" (click)="addFriend(user.id)">
+                <ion-icon name="person-add-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-list>
+</ion-content>

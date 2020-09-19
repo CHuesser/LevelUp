@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Challenge, ChallengeStatus, ChallengeType} from '../../models/challenge';
+import {Challenge, ChallengeStatus, ChallengeType} from '../../models/Challenge';
 
 
 @Injectable()
