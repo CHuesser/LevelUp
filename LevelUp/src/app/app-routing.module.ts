@@ -65,6 +65,8 @@ const routes: Routes = [
   {
     path: 'foodsearchresult/:id',
     loadChildren: () => import('./foodsearchresult/foodsearchresult.module').then( m => m.FoodsearchresultPageModule)
+  },
+  {
     path: 'community-grouplist/:meid',
     loadChildren: () => import('./community-grouplist/community-grouplist.module').then( m => m.CommunityGrouplistPageModule)
   },
