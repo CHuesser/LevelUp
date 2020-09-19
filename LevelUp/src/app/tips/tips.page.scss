@@ -18,3 +18,24 @@ ion-toolbar{
 .deactivated-filter{
   opacity: 40%;
 }
+
+
+
+ion-card {
+  position: relative;
+  text-align: center;
+}
+
+
+.card-title {
+ margin-top: 10px;
+  font-size: 22px;
+  font-family: "Trade Gothic Condensed", Arial, sans-serif;
+}
+
+.socialbutton{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+}

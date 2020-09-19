@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/Reusable-shopping-bags.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/ReusableBeverageContainer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/eatLessSalt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/eatRightFats.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/fruits_vegetables.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/solarLightbulb.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/tipImages/sparlampe.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/models/Tip.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/models/Tip.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/tip-service/tip-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tips/tips.page.scss" afterDir="false" />
     </list>
@@ -87,7 +78,7 @@
       <workItem from="1600456038545" duration="1678000" />
       <workItem from="1600457873344" duration="6502000" />
       <workItem from="1600496895697" duration="1391000" />
-      <workItem from="1600509872595" duration="772000" />
+      <workItem from="1600509872595" duration="2550000" />
     </task>
     <servers />
   </component>
@@ -137,19 +128,24 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600460299448" />
-    <state x="92" y="92" width="2376" height="1216" key="dock-window-2" timestamp="1600510645167">
+    <state x="92" y="92" width="2376" height="1216" key="dock-window-2" timestamp="1600510974017">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="dock-window-2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600510645167" />
+    <state x="92" y="92" width="2376" height="1216" key="dock-window-2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600510974017" />
     <state x="44" y="0" width="1459" height="699" key="dock-window-3" timestamp="1600510645167">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="44" y="0" width="1459" height="699" key="dock-window-3/0.0.2560.1400/-1920.350.1920.1040@-1920.350.1920.1040" timestamp="1600507754548" />
     <state x="44" y="0" width="1459" height="699" key="dock-window-3/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600510645167" />
-    <state x="1661" y="299" width="585" height="801" key="find.popup" timestamp="1600461089417">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="-674" y="572" width="555" height="596" key="find.popup" timestamp="1600511224632">
+      <screen x="-1920" y="350" width="1920" height="1040" />
     </state>
+    <state x="-674" y="572" width="555" height="596" key="find.popup/0.0.2560.1400/-1920.350.1920.1040@-1920.350.1920.1040" timestamp="1600511224632" />
     <state x="1661" y="299" width="585" height="801" key="find.popup/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600461089417" />
+    <state x="-1304" y="415" key="run.anything.popup" timestamp="1600512495054">
+      <screen x="-1920" y="350" width="1920" height="1040" />
+    </state>
+    <state x="-1304" y="415" key="run.anything.popup/0.0.2560.1400/-1920.350.1920.1040@-1920.350.1920.1040" timestamp="1600512495054" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1600508652953">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
