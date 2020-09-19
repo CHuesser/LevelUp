@@ -22,6 +22,9 @@
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelUp/src/app/carbon-footprint/carbonFootprintAccessor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/carbon-footprint/carbonFootprintAccessor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/models/Challenge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/models/Challenge.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,11 +133,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="310" y="242" width="1301" height="566" key="dock-window-1/0.0.2560.1400/-1920.350.1920.1040@-1920.350.1920.1040" timestamp="1600525167089" />
-    <state x="-1928" y="342" width="2376" height="1216" maximized="true" key="dock-window-2" timestamp="1600526336769">
+    <state x="-1928" y="342" width="2376" height="1216" key="dock-window-2" timestamp="1600529376018">
       <screen x="-1920" y="350" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="dock-window-2/0.0.2560.1400/-1920.350.1920.1040@-1920.350.1920.1040" timestamp="1600518011544" />
-    <state x="-1928" y="342" width="2376" height="1216" maximized="true" key="dock-window-2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600526336769" />
+    <state x="-1928" y="342" width="2376" height="1216" key="dock-window-2/0.0.2560.1400/-1920.350.1920.1040@0.0.2560.1400" timestamp="1600529376018" />
     <state x="-1169" y="340" width="1459" height="699" maximized="true" key="dock-window-3" timestamp="1600526336769">
       <screen x="-1920" y="350" width="1920" height="1040" />
     </state>

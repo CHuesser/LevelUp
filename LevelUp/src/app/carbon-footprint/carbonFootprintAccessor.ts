@@ -8,8 +8,15 @@ export class CarbonFootprintAccessor {
     getCarbonFootprint(args: CarbonFootprintArgs): Promise<CarbonFootprintResponse>{
         // example: https://api.triptocarbon.xyz/v1/footprint?activity=10&activityType=miles&country=def&mode=taxi
         const url = new URL(this.apiPrefix + 'activity=' + args.activity +
-            '&activityType=' + args.activityType + '&country=' + args.mode);
-        return fetch(url.toString()).then(res => res.json()).then(res => res as CarbonFootprintResponse);
+            '&activityType=' + args.activityType + '&country=' + args.country + '&mode=' + args.mode);
+
+        return fetch(url.toString(),{
+                mode: 'no-cors',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            }
+            ).then(res => res.json()).then(res => res as CarbonFootprintResponse);
     }
 }
 

@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Challenge} from '../models/Challenge';
 
 import {ChallengeServiceProvider} from '../providers/challenge-service/challenge-service';
+import {ActivityType, CarbonFootprintArgs, Country, FuelType, Mode} from "../carbon-footprint/carbonFootprintArgs";
+import {CarbonFootprintAccessor} from "../carbon-footprint/carbonFootprintAccessor";
 
 @Component({
     selector: 'app-challenges',
@@ -42,6 +44,20 @@ export class ChallengesPage implements OnInit {
         this.filteredChallenges = this.challenges.filter(item => this.filterargs.indexOf(item.category) !== -1);
 
 
+    }
+
+
+    calculateSavedCarbonFootprint(){
+        let args = new CarbonFootprintArgs();
+        args.activityType = ActivityType.miles;
+        args.activity = 20;
+        args.country = Country.def;
+        args.fuelType = FuelType.motorGasoline;
+        args.mode = Mode.petrolCar;
+
+        let carbonFootprintAccessor = new CarbonFootprintAccessor();
+        let response = carbonFootprintAccessor.getCarbonFootprint(args);
+        console.log(response);
     }
 
 
