@@ -2,16 +2,23 @@
   <ion-toolbar>
     <ion-title>tips</ion-title>
   </ion-toolbar>
+  <div class="bar bar-subheader">
+
+    <div class="button-bar">
+      <ion-button class="button filter-button" id="tipFilter_0" (click)="removeAddFilter(0)">Health</ion-button>
+      <ion-button class="button filter-button" id="tipFilter_1" (click)="removeAddFilter(1)">Sustainability</ion-button>
+      <ion-button class="button filter-button" id="tipFilter_2" (click)="removeAddFilter(2)">Wealth</ion-button>
+      <ion-button class="button filter-button" id="tipFilter_3" (click)="removeAddFilter(2)">Wealth</ion-button>
+    </div>
+
+  </div>
 </ion-header>
 
 <ion-content>
 
-  <ion-card *ngFor="let tip of tips">
+  <ion-card *ngFor="let tip of filteredTips">
     <div class="card-title">{{tip.title}}</div>
     <div class="card-description">{{tip.description}}</div>
-    <div class="tint">
-      <img src="{{tip.image}}"/>
-    </div>
 
   </ion-card>
 
