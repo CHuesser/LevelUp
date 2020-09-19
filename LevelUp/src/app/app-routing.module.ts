@@ -25,6 +25,26 @@ const routes: Routes = [
   {
     path: 'community',
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
+  },
+  {
+    path: 'home-trackfood',
+    loadChildren: () => import('./home-trackfood/home-trackfood.module').then( m => m.HomeTrackfoodPageModule)
+  },
+  {
+    path: 'home-active-challenge',
+    loadChildren: () => import('./home-active-challenge/home-active-challenge.module').then( m => m.HomeActiveChallengePageModule)
+  },
+  {
+    path: 'home-trackexercise',
+    loadChildren: () => import('./home-trackexercise/home-trackexercise.module').then( m => m.HomeTrackexercisePageModule)
+  },
+  {
+    path: 'home-heartrate',
+    loadChildren: () => import('./home-heartrate/home-heartrate.module').then( m => m.HomeHeartratePageModule)
+  },
+  {
+    path: 'home-sleepanalysis',
+    loadChildren: () => import('./home-sleepanalysis/home-sleepanalysis.module').then( m => m.HomeSleepanalysisPageModule)
   }
 ];
 @NgModule({
