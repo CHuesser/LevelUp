@@ -32,6 +32,10 @@ const routes: Routes = [
         loadChildren: () => import('../challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
       },
       {
+        path: 'home-active-challenge',
+        loadChildren: () => import('../home-active-challenge/home-active-challenge.module').then(m => m.HomeActiveChallengePageModule)
+      },
+      {
         path: 'foodsearch/:id',
         loadChildren: () => import('../foodsearch/foodsearch.module').then(m => m.FoodsearchPageModule)
 
