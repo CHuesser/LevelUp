@@ -48,18 +48,4 @@ export class ChallengesPage implements OnInit {
     }
 
 
-    calculateSavedCarbonFootprint(){
-        let args = new CarbonFootprintArgs();
-        args.activityType = ActivityType.miles;
-        args.activity = 20;
-        args.country = Country.def;
-        args.fuelType = FuelType.motorGasoline;
-        args.mode = Mode.petrolCar;
-
-        let carbonFootprintAccessor = new CarbonFootprintAccessor(this.http);
-        let response = carbonFootprintAccessor.getCarbonFootprint(args);
-        console.log(response);
-    }
-
-
 }
