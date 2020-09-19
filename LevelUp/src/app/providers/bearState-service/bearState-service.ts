@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {Challenge, ChallengeStatus, ChallengeType} from '../../models/Challenge';
 import {BearState} from '../../models/BearState';
 
 

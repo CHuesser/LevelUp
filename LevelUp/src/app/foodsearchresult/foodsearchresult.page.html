@@ -20,34 +20,36 @@
     <ion-title>{{fooddetails.name}}</ion-title>
     <ion-button color="tertiary" (click)="addFoodItem(fooddetails)">Add</ion-button>
   </ion-item-divider>
-  <ion-item>
-    <ion-label>Serving size: </ion-label>
-    <ion-note slot="end">{{fooddetails.servingSize}} g</ion-note>
-  </ion-item>
-  <ion-item>
-    <ion-label>Number of servings: </ion-label>
-    <ion-note slot="end">1</ion-note>
-  </ion-item>
+  <div *ngIf="fooddetails">
     <ion-item>
-      <ion-label>Calories: </ion-label>
-      <ion-note slot="end">{{fooddetails.calories}} g</ion-note>
+      <ion-label>Serving size: </ion-label>
+      <ion-note slot="end">{{fooddetails.servingSize}} g</ion-note>
     </ion-item>
-  <ion-item>
-    <ion-label>Carbs: </ion-label>
-    <ion-note slot="end">{{fooddetails.carbs}} g</ion-note>
-  </ion-item>
-  <ion-item>
-    <ion-label>Sugar:</ion-label>
-    <ion-note slot="end">{{fooddetails.sugar}} g</ion-note>
-  </ion-item>
-  <ion-item>
-    <ion-label>Fat:</ion-label>
-    <ion-note slot="end">{{fooddetails.fat}} g</ion-note>
-  </ion-item>
-  <ion-item>
-    <ion-label>Protein: </ion-label>
-    <ion-note slot="end">{{fooddetails.protein}} g</ion-note>
-  </ion-item>
+    <ion-item>
+      <ion-label>Number of servings: </ion-label>
+      <ion-note slot="end">1</ion-note>
+    </ion-item>
+      <ion-item>
+        <ion-label>Calories: </ion-label>
+        <ion-note slot="end">{{fooddetails.calories}} g</ion-note>
+      </ion-item>
+    <ion-item>
+      <ion-label>Carbs: </ion-label>
+      <ion-note slot="end">{{fooddetails.carbs}} g</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sugar:</ion-label>
+      <ion-note slot="end">{{fooddetails.sugar}} g</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fat:</ion-label>
+      <ion-note slot="end">{{fooddetails.fat}} g</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Protein: </ion-label>
+      <ion-note slot="end">{{fooddetails.protein}} g</ion-note>
+    </ion-item>
+  </div>
 </ion-content>
 
 
