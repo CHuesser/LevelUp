@@ -1,3 +1,41 @@
+.filter-button{
+  margin: 0.2em;
+  height: 50px;
+}
+ion-toolbar{
+  text-align: center;
+}
+
+.filter-icon{
+  color: black;
+}
+.button-bar{
+  margin: 0 1em 0 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
 .deactivated-filter{
   opacity: 40%;
+}
+
+
+
+ion-card {
+  position: relative;
+  text-align: center;
+}
+
+
+.card-title {
+ margin-top: 10px;
+  font-size: 22px;
+  font-family: "Trade Gothic Condensed", Arial, sans-serif;
+}
+
+.socialbutton{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
