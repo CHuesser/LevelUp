@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'challenge-detail/:id',
     loadChildren: () => import('./challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
+  },  {
+    path: 'modal-page',
+    loadChildren: () => import('./modal-page/modal-page.module').then( m => m.ModalPagePageModule)
   },
+
 
 ];
 @NgModule({
