@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
   },
   {
+    path: 'userlist/:meid',
+    loadChildren: () => import('./userlist/userlist.module').then( m => m.UserlistPageModule)
+  },
+  {
     path: 'challenge-detail/:id',
     loadChildren: () => import('./challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
   },
@@ -35,8 +39,24 @@ const routes: Routes = [
     loadChildren: () => import('./modal-page/modal-page.module').then( m => m.ModalPagePageModule)
   },
   {
-    path: 'userlist/:meid',
-    loadChildren: () => import('./userlist/userlist.module').then( m => m.UserlistPageModule)
+    path: 'home-trackfood',
+    loadChildren: () => import('./home-trackfood/home-trackfood.module').then( m => m.HomeTrackfoodPageModule)
+  },
+  {
+    path: 'home-active-challenge',
+    loadChildren: () => import('./home-active-challenge/home-active-challenge.module').then( m => m.HomeActiveChallengePageModule)
+  },
+  {
+    path: 'home-trackexercise',
+    loadChildren: () => import('./home-trackexercise/home-trackexercise.module').then( m => m.HomeTrackexercisePageModule)
+  },
+  {
+    path: 'home-heartrate',
+    loadChildren: () => import('./home-heartrate/home-heartrate.module').then( m => m.HomeHeartratePageModule)
+  },
+  {
+    path: 'home-sleepanalysis',
+    loadChildren: () => import('./home-sleepanalysis/home-sleepanalysis.module').then( m => m.HomeSleepanalysisPageModule)
   }
 ];
 @NgModule({
