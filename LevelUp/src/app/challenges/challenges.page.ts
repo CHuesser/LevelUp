@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Challenge} from '../models/challenge';
+import {Challenge} from '../models/Challenge';
 
 import {ChallengeServiceProvider} from '../providers/challenge-service/challenge-service';
 

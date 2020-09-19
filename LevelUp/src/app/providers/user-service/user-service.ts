@@ -7,7 +7,7 @@ const users: User[] = [
         name: 'Beck',
         diabotchiName: 'BamBamTheDumDum',
         level: 1,
-        friendIds: [1,2,3],
+        friendIds: [1,2],
         challengeIds: [],
     },
     {

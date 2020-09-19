@@ -11,18 +11,220 @@
         <ion-icon slot="icon-only" name="settings"></ion-icon>
       </ion-button>
     </ion-buttons>
-
   </ion-toolbar>
 </ion-header>
 
-
-
-
-
-
-
-
-
-
 <ion-content>
+
+  <ion-item>
+    <ion-label class="ion-text-center">Good morning</ion-label>
+  </ion-item>
+  <div>
+    <ion-buttons>
+      <ion-button text-right>
+        <ion-icon slot="icon-only" name="information-circle-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+  <div style="margin: 1em">
+    <ion-img class="img-align-center" src="./assets/images/Happy_Beary.png">
+    </ion-img>
+  </div>
+
+
+  <div style="margin: 1em">
+    <icon-grid>
+    <ion-row>
+      <ion-col class="col-elem-center">
+        <ion-buttons class="col-elem-center">
+          <ion-button>
+            <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-buttons class="col-elem-center">
+          <ion-button>
+            <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-buttons class="col-elem-center">
+        <ion-button>
+          <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-buttons class="col-elem-center">
+          <ion-button>
+            <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="col-elem-center">
+        <ion-text>good</ion-text>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-text>average</ion-text>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-text>bad</ion-text>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-text>good</ion-text>
+      </ion-col>
+    </ion-row>
+    </icon-grid>
+  </div>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Active Challenge
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button [routerLink]="['/home-trackfood']">
+            <ion-icon slot="icon-only" name="chevron-forward-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="bicycle-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Track exercise
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button [routerLink]="['/home-trackexercise']">
+            <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="nutrition-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Log nutrition
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button [routerLink]="['/home-trackfood']" routerDirection="forward">
+            <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="water-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Log water
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button>
+            <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="pulse-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Resting heart rate
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button>
+            <ion-icon slot="icon-only" name="chevron-forward-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row no-padding>
+      <ion-col text-left>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon slot="icon-only" name="moon-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col class="col-elem-center">
+        <ion-card-header>
+          Sleep analysis
+        </ion-card-header>
+      </ion-col>
+      <ion-col class="col-elem-right">
+        <ion-buttons class="col-elem-right">
+          <ion-button>
+            <ion-icon slot="icon-only" name="chevron-forward-sharp"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
 </ion-content>
