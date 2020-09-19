@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/HappyBear.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LevelUp/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,12 +33,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state relative-caret-position="251">
+              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
@@ -51,9 +49,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LevelUp/src/assets/images/Logo.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="210">
               <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -115,7 +118,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1051" />
+    <option name="width" value="1183" />
     <option name="height" value="966" />
   </component>
   <component name="ProjectId" id="1hhGiNVd0TrFQa7mTgPXvYlwCPc" />
@@ -142,21 +145,6 @@
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
-              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
-              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,17 +207,18 @@
       <workItem from="1600456038545" duration="1678000" />
       <workItem from="1600457873344" duration="6502000" />
       <workItem from="1600496895697" duration="26653000" />
+      <workItem from="1600551722927" duration="106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33401000" />
+    <option name="totallyTimeSpent" value="33507000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1401" height="966" extended-state="0" />
+    <frame x="0" y="23" width="1183" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28985506" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25645438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -650,7 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
+        <state relative-caret-position="210">
           <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -658,10 +647,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/assets/images/Logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+        <state relative-caret-position="251">
+          <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
