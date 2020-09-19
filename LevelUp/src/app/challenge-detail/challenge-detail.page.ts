@@ -8,6 +8,7 @@ import {Group} from '../models/group';
 import {GroupServiceProvider} from '../providers/group-service/group-service';
 import {ModalController} from '@ionic/angular';
 import {ModalPagePage} from '../modal-page/modal-page.page';
+import {ScoreServiceProvider} from '../providers/score-service/score-service';
 
 @Component({
     selector: 'app-challenge-detail',
@@ -24,7 +25,7 @@ export class ChallengeDetailPage implements OnInit {
     private challengeDetail: Challenge;
 
     // tslint:disable-next-line:max-line-length
-    constructor(private activatedRoute: ActivatedRoute, private challengeServiceProvider: ChallengeServiceProvider, private userServiceProvider: UserServiceProvider, private groupServiceProvider: GroupServiceProvider, public modalCtrl: ModalController) {
+    constructor(private activatedRoute: ActivatedRoute, private challengeServiceProvider: ChallengeServiceProvider, private userServiceProvider: UserServiceProvider, private groupServiceProvider: GroupServiceProvider, public modalCtrl: ModalController, public scoreServiceProvider: ScoreServiceProvider) {
         this.userServiceProvider.getUser(0)
             .then(me => this.me = me)
             .then(_ => this.userServiceProvider.getFriends(this.me)
@@ -70,18 +71,21 @@ export class ChallengeDetailPage implements OnInit {
     }
 
     saveChallenge() {
-        this.challengeDetail.participants = [this.me.id]
+        this.challengeDetail.participants = [this.me.id];
         let t = this.participants.map(e => e.id);
         this.challengeDetail.participants = this.challengeDetail.participants.concat(t);
         const temp = this.participantGroup.map(g => g.userIds);
-        let temp2= [];
-        for (let row of temp){
+        let temp2 = [];
+        for (let row of temp) {
             temp2 = temp2.concat(row);
         }
         this.challengeDetail.participants = this.challengeDetail.participants.concat(temp2);
         this.challengeDetail.participants = Array.from(new Set(this.challengeDetail.participants));
         this.participants.forEach(user => user.challengeIds.push(this.challengeId));
         this.participantGroup.forEach(group => group.challengeIds.push(this.challengeId));
+        for (let user of this.challengeDetail.participants) {
+            this.scoreServiceProvider.createScore(user, this.challengeDetail.id);
+        }
         this.challengeServiceProvider.storeChallenge(this.challengeDetail);
     }
 
