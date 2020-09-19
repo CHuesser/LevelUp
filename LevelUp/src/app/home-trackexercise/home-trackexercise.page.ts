@@ -14,9 +14,7 @@ export class HomeTrackexercisePage implements OnInit {
   private duration: string;
   private calories: string;
 
-  constructor() { 
-    console.log(this.exerciseType)
-  }
+  constructor() { }
 
   ngOnInit() {
   }
