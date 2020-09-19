@@ -31,6 +31,17 @@ const routes: Routes = [
         path: 'challenge-detail/:id',
         loadChildren: () => import('../challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
       },
+      {
+        path: 'foodsearch/:id',
+        loadChildren: () => import('../foodsearch/foodsearch.module').then(m => m.FoodsearchPageModule)
+
+      },
+
+      {
+        path: 'home-trackfood',
+        loadChildren: () => import('../home-trackfood/home-trackfood.module').then(m => m.HomeTrackfoodPageModule)
+
+      },
 
       {
         path: '',

@@ -22,7 +22,7 @@
   <ion-button (click)="getAllFood()">Search</ion-button>
 
   <ion-list *ngFor="let items of fooditems">
-    <ion-item routerLink="/foodsearchresult/{{items.id}}">
+    <ion-item (click)="openModal(items)">
       <ion-label>{{items.name}}</ion-label>
     </ion-item>
   </ion-list>

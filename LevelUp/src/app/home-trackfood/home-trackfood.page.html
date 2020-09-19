@@ -30,11 +30,15 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
+        <ion-button color="tertiary" routerLink='/tabs/foodsearch/0'>
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
+
     </ion-item>
+    <ion-item *ngFor="let item of foodItems0">
+    <ion-label>{{item.name}}</ion-label>
+  </ion-item>
   </ion-list>
 
   <ion-list>
@@ -44,10 +48,13 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
+        <ion-button color="tertiary" routerLink="/tabs/foodsearch/1">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
+    </ion-item>
+    <ion-item *ngFor="let item of foodItems1">
+      <ion-label>{{item.name}}</ion-label>
     </ion-item>
   </ion-list>
 
@@ -58,10 +65,13 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
+        <ion-button color="tertiary" routerLink='/tabs/foodsearch/2'>
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
+    </ion-item>
+    <ion-item *ngFor="let item of foodItems2">
+      <ion-label>{{item.name}}</ion-label>
     </ion-item>
   </ion-list>
 
@@ -72,10 +82,13 @@
     <ion-item>
       <ion-label>Add food</ion-label>
       <ion-buttons>
-        <ion-button color="tertiary" [routerLink]="['/foodsearch']">
+        <ion-button color="tertiary" routerLink="/tabs/foodsearch/3">
           <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
         </ion-button>
       </ion-buttons>
+    </ion-item>
+    <ion-item *ngFor="let item of foodItems3">
+      <ion-label>{{item.name}}</ion-label>
     </ion-item>
   </ion-list>
 

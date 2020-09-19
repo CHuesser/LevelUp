@@ -14,11 +14,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content *ngIf="fooddetails">
+<ion-content>
   <ion-item-divider>
-    <ion-icon slot="start" name="chevron-back-sharp" [routerLink]="['foodsearch']"></ion-icon>
+    <ion-icon slot="start" name="chevron-back-sharp" (click)="closeModal()"></ion-icon>
     <ion-title>{{fooddetails.name}}</ion-title>
-    <ion-button color="tertiary">Add</ion-button>
+    <ion-button color="tertiary" (click)="addFoodItem(fooddetails)">Add</ion-button>
   </ion-item-divider>
   <ion-item>
     <ion-label>Serving size: </ion-label>
