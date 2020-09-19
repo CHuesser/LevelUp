@@ -16,7 +16,7 @@
 </ion-header>
 
 <ion-content>
-    <ion-card *ngFor="let challenge of filteredChallenges" routerLink="/tabs/challenge-detail/{{challenge.id.toString()}}" routerDirection="forward">
+    <ion-card *ngFor="let challenge of filteredChallenges">
         <div class="card-title">{{challenge.title}}</div>
         <div class="tint">
             <img src="{{challenge.image}}"/>

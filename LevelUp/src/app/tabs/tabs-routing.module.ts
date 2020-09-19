@@ -28,11 +28,6 @@ const routes: Routes = [
         loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
       },
       {
-        path: 'challenge-detail/:id',
-        loadChildren: () => import('../challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
-      },
-
-      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
