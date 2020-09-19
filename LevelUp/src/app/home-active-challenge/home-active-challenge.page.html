@@ -1,9 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home_activeChallenge</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Level Up!</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div>
+    <ion-buttons>
+      <ion-button color="tertiary"  [routerLink]="['/tabs/home']">
+        <ion-icon slot="icon-only" name="chevron-back-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
 
 </ion-content>

@@ -3,8 +3,7 @@
 export class CarbonFootprintArgs {
     activity: number;
     activityType: ActivityType;
-    fuelType: FuelType;
-    mode: Mode;
+    mode: string;
     country: Country;
 }
 
@@ -12,13 +11,6 @@ export class CarbonFootprintArgs {
 export enum ActivityType {
     miles = 'miles',
     fuel = 'fuel'
-}
-
-export enum FuelType {
-    motorGasoline = 'motorGasoline',
-    diesel = 'diesel',
-    aviationGasoline = 'aviationGasoline',
-    jetFuel = 'jetFuel'
 }
 
 export enum Mode {

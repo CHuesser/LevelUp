@@ -8,6 +8,7 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
+import {BearStateServiceProvider} from './providers/bearState-service/bearState-service';
 import {ChallengeServiceProvider} from './providers/challenge-service/challenge-service';
 import {TipServiceProvider} from './providers/tip-service/tip-service';
 import {UserServiceProvider} from './providers/user-service/user-service';
@@ -27,8 +28,9 @@ import {StoredFoodServiceProvider} from './providers/stored-food-service/stored-
     TipServiceProvider,
     UserServiceProvider,
     GroupServiceProvider,
-      StoredFoodServiceProvider,
-      ScoreServiceProvider,
+    BearStateServiceProvider,
+    StoredFoodServiceProvider,
+    ScoreServiceProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
