@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/food-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/food-service.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LevelUp/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -57,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/food-service.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="285">
+              <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -69,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -217,12 +215,12 @@
       <workItem from="1600441779522" duration="3571000" />
       <workItem from="1600456038545" duration="1678000" />
       <workItem from="1600457873344" duration="6502000" />
-      <workItem from="1600496895697" duration="14869000" />
+      <workItem from="1600496895697" duration="15653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14869000" />
+    <option name="totallyTimeSpent" value="15653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1219" height="968" extended-state="0" />
@@ -518,16 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -540,10 +528,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/food-service.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="285">
+          <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
