@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FoodServiceService} from '../food-service.service';
 
 @Component({
   selector: 'app-home-trackfood',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeTrackfoodPage implements OnInit {
 
-  constructor() { }
+  fooditem: string;
+  constructor(public foodService: FoodServiceService) { }
 
   ngOnInit() {
+
+  }
+
+  getAllFood(){
+    this.foodService.getAllFood(this.fooditem);
   }
 
 }

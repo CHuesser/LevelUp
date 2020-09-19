@@ -12,11 +12,12 @@ import { TipServiceProvider } from './providers/tip-service/tip-service';
 import { ChallengeServiceProvider } from './providers/challenge-service/challenge-service';
 import { UserServiceProvider } from './providers/user-service/user-service';
 import { GroupServiceProvider } from './providers/group-service/group-service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,
