@@ -15,6 +15,7 @@ import { GroupServiceProvider } from './providers/group-service/group-service';
 import {HttpClientModule} from '@angular/common/http';
 import {BearStateServiceProvider} from './providers/bearState-service/bearState-service';
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

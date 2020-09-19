@@ -33,6 +33,5 @@ export class HomePage implements OnInit {
             this.sustBear = bearStates[4];
             this.antiSustBear = bearStates[5];
         }));
-
     }
 }
