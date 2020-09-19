@@ -5,6 +5,10 @@ import {Score} from '../../models/Score';
 export class ScoreServiceProvider {
     activeScores: Score[];
 
+    constructor(){
+        this.activeScores = [];
+    }
+
     createScore(userId: number, challengeId: number) {
         this.activeScores.push( new Score(userId, challengeId));
     }
