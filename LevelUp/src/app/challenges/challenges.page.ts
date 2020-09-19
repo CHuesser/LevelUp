@@ -42,7 +42,6 @@ export class ChallengesPage implements OnInit {
         }
         this.filteredChallenges = this.challenges.filter(item => this.filterargs.indexOf(item.category) !== -1);
 
-
     }
 
 

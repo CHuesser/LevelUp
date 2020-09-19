@@ -4,9 +4,21 @@ import {Challenge, ChallengeStatus, ChallengeType} from '../../models/Challenge'
 
 @Injectable()
 export class ChallengeServiceProvider {
+    activeChallenges: Challenge[];
 
     constructor() {
+        this.activeChallenges = [];
     }
+
+    storeChallenge(challenge: Challenge) {
+        this.activeChallenges.push(challenge);
+    }
+
+    getActiveChallenge(userID: number): Challenge[] {
+        return this.activeChallenges.filter(challenge => challenge.participants.indexOf(userID) !== -1);
+
+    }
+
 
     getChallenges(): Promise<Challenge[]> {
         return new Promise((resolve, reject) => resolve([

@@ -11,10 +11,6 @@ const routes: Routes = [
     component: HomePage
   },
   {
-    path: 'home-trackfood',
-    component: HomeTrackfoodPage
-  },
-  {
     path: 'home-trackexercise',
     component: HomeTrackexercisePage
   }
