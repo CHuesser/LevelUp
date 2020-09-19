@@ -18,18 +18,20 @@
   <div style="margin-top: 2em">
     <ion-title class="ion-text-center">Hey Tom</ion-title>
   </div>
-  <div>
+
+  <div class="tooltip" >
     <ion-buttons>
+      <span class="tooltiptext">{{sustBear.text}}</span>
       <ion-button text-right>
         <ion-icon color="tertiary" slot="icon-only" name="information-circle-sharp"></ion-icon>
       </ion-button>
     </ion-buttons>
   </div>
+
   <div style="margin: 1em">
-    <ion-img class="img-align-center" src="./assets/images/Happy_Beary.png">
+    <ion-img class="img-align-center" src="{{sustBear.dataPath}}">
     </ion-img>
   </div>
-
 
   <div style="margin: 1em">
     <icon-grid>
@@ -86,7 +88,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="star-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="star-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -97,7 +99,7 @@
       </ion-col>
       <ion-col class="col-elem-right">
         <ion-buttons class="col-elem-right">
-          <ion-button [routerLink]="['/home-trackfood']">
+          <ion-button color="tertiary" [routerLink]="['/home-trackfood']">
             <ion-icon slot="icon-only" name="chevron-forward-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -110,7 +112,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="bicycle-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="bicycle-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -121,7 +123,7 @@
       </ion-col>
       <ion-col class="col-elem-right">
         <ion-buttons class="col-elem-right">
-          <ion-button [routerLink]="['/home-trackexercise']">
+          <ion-button color="tertiary" [routerLink]="['/home-trackexercise']">
             <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -134,7 +136,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="nutrition-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="nutrition-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -145,7 +147,7 @@
       </ion-col>
       <ion-col class="col-elem-right">
         <ion-buttons class="col-elem-right">
-          <ion-button [routerLink]="['/home-trackfood']" routerDirection="forward">
+          <ion-button color="tertiary" [routerLink]="['/home-trackfood']" routerDirection="forward">
             <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -158,7 +160,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="water-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="water-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -170,7 +172,7 @@
       <ion-col class="col-elem-right">
         <ion-buttons class="col-elem-right">
           <ion-button>
-            <ion-icon slot="icon-only" name="add-circle-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="add-circle-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -182,7 +184,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="pulse-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="pulse-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -194,7 +196,7 @@
       <ion-col class="col-elem-right">
         <ion-buttons class="col-elem-right">
           <ion-button>
-            <ion-icon slot="icon-only" name="chevron-forward-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="chevron-forward-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>
@@ -206,7 +208,7 @@
       <ion-col text-left>
         <ion-buttons>
           <ion-button>
-            <ion-icon slot="icon-only" name="moon-sharp"></ion-icon>
+            <ion-icon color="tertiary" slot="icon-only" name="moon-sharp"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-col>

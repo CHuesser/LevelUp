@@ -13,6 +13,7 @@ import { ChallengeServiceProvider } from './providers/challenge-service/challeng
 import { UserServiceProvider } from './providers/user-service/user-service';
 import { GroupServiceProvider } from './providers/group-service/group-service';
 import {HttpClientModule} from '@angular/common/http';
+import {BearStateServiceProvider} from './providers/bearState-service/bearState-service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import {HttpClientModule} from '@angular/common/http';
     TipServiceProvider,
     UserServiceProvider,
     GroupServiceProvider,
+    BearStateServiceProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
