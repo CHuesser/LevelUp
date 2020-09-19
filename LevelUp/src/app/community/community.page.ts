@@ -5,8 +5,9 @@ import { User } from '../models/user';
 import { GroupServiceProvider } from '../providers/group-service/group-service';
 import { UserServiceProvider} from '../providers/user-service/user-service';
 import { ModalController } from '@ionic/angular';
-import {ModalPagePage} from '../modal-page/modal-page.page';
+import { ModalPagePage } from '../modal-page/modal-page.page';
 import { UserlistPage } from '../userlist/userlist.page';
+import { CommunityGrouplistPage } from '../community-grouplist/community-grouplist.page';
 
 @Component({
     selector: 'app-community',
@@ -38,6 +39,13 @@ export class CommunityPage implements OnInit {
         this.updateFriendList();
     }
 
+    leaveGroup(groupId) {
+        let g = this.groups.find(g => g.id === groupId);
+        let index = g.userIds.indexOf(this.me.id);
+        g.userIds.splice(index,1);
+        this.updateGroupList();
+    }
+
     updateFriendList() {
         this.userServiceProvider.getFriends(this.me)
             .then(users => this.friends = users);
@@ -59,5 +67,18 @@ export class CommunityPage implements OnInit {
             });
 
         return await userlistPage.present();
+    }
+
+    async openGrouplist() {
+        let grouplistPage = await this.modalCtrl.create({
+            component: CommunityGrouplistPage
+        });
+
+        grouplistPage.onWillDismiss()
+            .then((data) => {
+                this.updateGroupList();
+            });
+
+        return await grouplistPage.present();
     }
 }

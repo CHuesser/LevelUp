@@ -57,7 +57,16 @@ const routes: Routes = [
   {
     path: 'home-sleepanalysis',
     loadChildren: () => import('./home-sleepanalysis/home-sleepanalysis.module').then( m => m.HomeSleepanalysisPageModule)
+  },
+  {
+    path: 'community-grouplist/:meid',
+    loadChildren: () => import('./community-grouplist/community-grouplist.module').then( m => m.CommunityGrouplistPageModule)
+  },  {
+    path: 'community-creategroup',
+    loadChildren: () => import('./community-creategroup/community-creategroup.module').then( m => m.CommunityCreategroupPageModule)
   }
+
+
 ];
 @NgModule({
   imports: [
