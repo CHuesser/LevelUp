@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'community',
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
+  },
+  {
+    path: 'userlist/:meid',
+    loadChildren: () => import('./userlist/userlist.module').then( m => m.UserlistPageModule)
   }
 ];
 @NgModule({

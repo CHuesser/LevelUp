@@ -21,6 +21,13 @@
         <ion-card-subtitle>Level: {{user.level}}</ion-card-subtitle>
       </ion-card-header>
     </ion-card>
+    <ion-card class="addButton" routerLink="/userlist/{{me?.id}}">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-icon name="person-add-outline" class="greyedOut"></ion-icon>
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
   </ion-list>
   <ion-list>
     <ion-list-header>

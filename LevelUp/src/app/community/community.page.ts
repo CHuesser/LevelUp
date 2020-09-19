@@ -17,12 +17,25 @@ export class CommunityPage implements OnInit {
 
     ngOnInit() { }
 
+    ionViewWillEnter() {
+        this.updateFriendList();
+        this.updateGroupList();
+    }
+
     constructor( private userServiceProvider: UserServiceProvider, private groupServiceProvider: GroupServiceProvider) {
         this.userServiceProvider.getUser(0)
             .then(me => this.me = me)
-            .then(_ => this.userServiceProvider.getFriends(this.me)
-                .then(users => this.friends = users))
-            .then(_ => this.groupServiceProvider.getGroupsToUser(this.me)
-                .then(groups => this.groups = groups));
-    }  
+            .then(_ => this.updateFriendList())
+            .then(_ => this.updateGroupList());
+    }
+
+    updateFriendList() {
+        this.userServiceProvider.getFriends(this.me)
+            .then(users => this.friends = users);
+    }
+
+    updateGroupList() {
+        this.groupServiceProvider.getGroupsToUser(this.me)
+            .then(groups => this.groups = groups);
+    }
 }
