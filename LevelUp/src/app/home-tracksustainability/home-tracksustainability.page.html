@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Track sustainability effort</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">taken means of transportation</ion-label>
+      <ion-select id="takenTransport" [(ngModel)]="takenTransport">
+        <ion-select-option value="byFoot">By foot</ion-select-option>
+        <ion-select-option value="bicycle">Bicycle</ion-select-option>
+        <ion-select-option value="transitRail">Train</ion-select-option>
+        <ion-select-option value="bus">Bus</ion-select-option>
+        <ion-select-option value="motorbike">Motorbike</ion-select-option>
+        <ion-select-option value="firstclassFlight">First class flight</ion-select-option>
+        <ion-select-option value="businessFlight">Business flight</ion-select-option>
+        <ion-select-option value="economyFlight">Economy flight</ion-select-option>
+        <ion-select-option value="taxi">Taxi</ion-select-option>
+        <ion-select-option value="petrolCar">Petrol car</ion-select-option>
+        <ion-select-option value="dieselCar">Diesel car</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">instead of using</ion-label>
+      <ion-select id="notTakenTransport" [(ngModel)]="notTakenTransport">
+        <ion-select-option value="byFoot">By foot</ion-select-option>
+        <ion-select-option value="bicycle">Bicycle</ion-select-option>
+        <ion-select-option value="transitRail">Train</ion-select-option>
+        <ion-select-option value="bus">Bus</ion-select-option>
+        <ion-select-option value="motorbike">Motorbike</ion-select-option>
+        <ion-select-option value="firstclassFlight">First class flight</ion-select-option>
+        <ion-select-option value="businessFlight">Business flight</ion-select-option>
+        <ion-select-option value="economyFlight">Economy flight</ion-select-option>
+        <ion-select-option value="taxi">Taxi</ion-select-option>
+        <ion-select-option value="petrolCar">Petrol car</ion-select-option>
+        <ion-select-option value="dieselCar">Diesel car</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" >Traveled KM</ion-label>
+      <ion-input [(ngModel)]="traveledKm"></ion-input>
+    </ion-item>
+
+    <ion-card>
+      <ion-button expand="block" (click)="calculateSavedCo2()">Calculate CO2 saving</ion-button>
+    </ion-card>
+
+
+    <ion-card [(hidden)]="resultHidden">
+      <ion-card-header class="co2Result" id="Co2SavedLabel"  expand="block" color="green">
+        <ion-title>
+          You saved {{savedCo2}} kg CO2!
+        </ion-title>
+       </ion-card-header>
+    </ion-card>
+
+
+
+  </ion-list>
+</ion-content>

@@ -64,14 +64,20 @@ const routes: Routes = [
   },
   {
     path: 'foodsearchresult/:id',
-    loadChildren: () => import('./foodsearchresult/foodsearchresult.module').then( m => m.FoodsearchresultPageModule)
+    loadChildren: () => import('./foodsearchresult/foodsearchresult.module').then(m => m.FoodsearchresultPageModule)
+  },
+  {
     path: 'community-grouplist/:meid',
     loadChildren: () => import('./community-grouplist/community-grouplist.module').then( m => m.CommunityGrouplistPageModule)
   },
   {
     path: 'community-creategroup',
     loadChildren: () => import('./community-creategroup/community-creategroup.module').then( m => m.CommunityCreategroupPageModule)
+  },  {
+    path: 'home-tracksustainability',
+    loadChildren: () => import('./home-tracksustainability/home-tracksustainability.module').then( m => m.HomeTracksustainabilityPageModule)
   }
+
 
 
 ];
