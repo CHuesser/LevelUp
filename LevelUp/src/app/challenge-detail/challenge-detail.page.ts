@@ -69,4 +69,20 @@ export class ChallengeDetailPage implements OnInit {
         return await modalPage.present();
     }
 
+    saveChallenge() {
+        this.challengeDetail.participants = [this.me.id]
+        let t = this.participants.map(e => e.id);
+        this.challengeDetail.participants = this.challengeDetail.participants.concat(t);
+        const temp = this.participantGroup.map(g => g.userIds);
+        let temp2= [];
+        for (let row of temp){
+            temp2 = temp2.concat(row);
+        }
+        this.challengeDetail.participants = this.challengeDetail.participants.concat(temp2);
+        this.challengeDetail.participants = Array.from(new Set(this.challengeDetail.participants));
+        this.participants.forEach(user => user.challengeIds.push(this.challengeId));
+        this.participantGroup.forEach(group => group.challengeIds.push(this.challengeId));
+        this.challengeServiceProvider.storeChallenge(this.challengeDetail);
+    }
+
 }
