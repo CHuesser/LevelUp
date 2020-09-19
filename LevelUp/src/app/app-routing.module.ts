@@ -27,6 +27,14 @@ const routes: Routes = [
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
   },
   {
+    path: 'challenge-detail/:id',
+    loadChildren: () => import('./challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
+  },
+  {
+    path: 'modal-page',
+    loadChildren: () => import('./modal-page/modal-page.module').then( m => m.ModalPagePageModule)
+  },
+  {
     path: 'userlist/:meid',
     loadChildren: () => import('./userlist/userlist.module').then( m => m.UserlistPageModule)
   }

@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title *ngIf="challengeDetail">  {{ challengeDetail.title }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="challengeDetail">
+    <div class="content">
+        <div>
+            {{challengeDetail.description}}
+        </div>
+        <h3>Participants</h3>
+        <div class="list-container">
+            <ion-list class="participant-list">
+                <ion-item>
+                    <ion-avatar slot="start">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                        <h2>{{me.name}}</h2>
+                    </ion-label>
+                </ion-item>
+
+                <ion-item *ngFor="let participant of participants">
+                    <ion-avatar slot="start">
+                        <img src="https://randomuser.me/api/portraits/women/{{participant.id}}.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                        <h2>{{participant.name}}</h2>
+                    </ion-label>
+                </ion-item>
+                <ion-item *ngFor="let participant of participantGroup">
+                    <ion-avatar slot="start">
+                        <img src="https://picsum.photos/id/{{participant.id}}/60/60.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                        <h2>{{participant.name}}</h2>
+                    </ion-label>
+
+                </ion-item>
+            </ion-list>
+
+            <ion-button expand="full" color="secondary"(click)="openModal()">Add Participants</ion-button>
+
+        </div>
+    </div>
+
+
+</ion-content>
+

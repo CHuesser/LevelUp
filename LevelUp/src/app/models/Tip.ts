@@ -8,6 +8,7 @@ export class Tip {
 
 export enum TipCategory {
     health,
-    environment,
-    money,
+    sustainability,
+    wealth,
+    other,
 }
