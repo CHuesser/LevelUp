@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/app/models/Exercise.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/Happy_Beary.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/providers/challenge-service/challenge-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/providers/challenge-service/challenge-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LevelUp/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -68,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/models/Exercise.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -77,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -85,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="231">
+              <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -116,11 +110,11 @@
         <option value="$PROJECT_DIR$/LevelUp/src/app/challenges/challenges.page.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood-routing.module.ts" />
-        <option value="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" />
-        <option value="$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home-routing.module.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/models/Exercise.ts" />
+        <option value="$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html" />
+        <option value="$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html" />
       </list>
     </option>
   </component>
@@ -232,24 +226,24 @@
       <workItem from="1600441779522" duration="3571000" />
       <workItem from="1600456038545" duration="1678000" />
       <workItem from="1600457873344" duration="6502000" />
-      <workItem from="1600496895697" duration="11121000" />
+      <workItem from="1600496895697" duration="12038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11121000" />
+    <option name="totallyTimeSpent" value="12038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1329" height="968" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27522936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27522936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.22031963" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.22031963" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896304" />
@@ -501,21 +495,21 @@
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/models/Exercise.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home-trackfood/home-trackfood.page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home-trackexercise/home-trackexercise.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="231">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
         </state>
       </provider>
     </entry>
