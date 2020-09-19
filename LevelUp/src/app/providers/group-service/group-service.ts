@@ -25,6 +25,16 @@ export class GroupServiceProvider {
     constructor() {
     }
 
+    addGroup(group) {
+        let groupIds = groups.map(g => g.id);
+        let newId = 0;
+        while (groupIds.includes(newId)) {
+            newId += 1;
+        }
+        group.id = newId;
+        groups.push(group);
+    }
+
     getAllGroups(): Promise<Group[]> {
         return new Promise((resolve, reject) => resolve(groups));
     }

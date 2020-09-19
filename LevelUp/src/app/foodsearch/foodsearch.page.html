@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Level Up!</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-icon slot="start" name="chevron-back-sharp" routerLink="home-trackfood"></ion-icon>
+  </ion-item>
+  <ion-searchbar [(ngModel)]="fooditem"  value="Search Food"></ion-searchbar>
+  <ion-button (click)="getAllFood()">Search</ion-button>
+
+  <ion-list *ngFor="let items of fooditems">
+    <ion-item routerLink="/foodsearchresult/{{items.id}}">
+      <ion-label>{{items.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

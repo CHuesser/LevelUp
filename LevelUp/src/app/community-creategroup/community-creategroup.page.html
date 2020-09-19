@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot='start'(click)="closeCreategroup()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>New Group</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <ion-list>
+    <ion-list-header lines="full">
+      <ion-label>
+        Group
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input [(ngModel)]="groupName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-input [(ngModel)]="groupDesc"></ion-input>
+    </ion-item>
+    <ion-card>
+      <ion-button expand="block" (click)="createGroup()">
+        <ion-icon name="save-outline"></ion-icon>
+      </ion-button>
+    </ion-card>
+  </ion-list>
+</ion-content>

@@ -10,6 +10,7 @@ export class HomeTrackfoodPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
