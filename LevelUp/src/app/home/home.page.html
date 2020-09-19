@@ -19,6 +19,7 @@
     <ion-title class="ion-text-center">Hey Tom</ion-title>
   </div>
 
+  <div *ngIf="happyBear">
   <div class="tooltip" >
     <ion-buttons>
       <span class="tooltiptext">{{happyBear.text}}</span>
@@ -31,6 +32,7 @@
   <div style="margin: 1em">
     <ion-img class="img-align-center" src="{{happyBear.dataPath}}">
     </ion-img>
+  </div>
   </div>
 
   <div style="margin: 1em">
