@@ -16,9 +16,29 @@
       <ion-label color="secondary">Friends</ion-label>
     </ion-list-header>
     <ion-card *ngFor="let user of friends">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <ion-card-header>
+              <ion-card-title>{{user.name}}</ion-card-title>
+              <ion-card-subtitle>Level: {{user.level}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-col>
+          <ion-col>
+            <ion-card-content>
+              <ion-button slot="end" (click)="removeFriend(user.id)">
+                <ion-icon name="person-remove-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="addButton" (click)="openUserlist()">
       <ion-card-header>
-        <ion-card-title>{{user.name}}</ion-card-title>
-        <ion-card-subtitle>Level: {{user.level}}</ion-card-subtitle>
+        <ion-card-title>
+          <ion-icon name="person-add-outline" class="greyedOut"></ion-icon>
+        </ion-card-title>
       </ion-card-header>
     </ion-card>
   </ion-list>
@@ -27,9 +47,29 @@
       <ion-label color="secondary">Groups</ion-label>
     </ion-list-header>
     <ion-card *ngFor="let group of groups">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <ion-card-header>
+              <ion-card-title>{{group.name}}</ion-card-title>
+              <ion-card-subtitle>{{group.description}}</ion-card-subtitle>
+            </ion-card-header>
+          </ion-col>
+          <ion-col>
+            <ion-card-content>
+              <ion-button slot="end" (click)="leaveGroup(group.id)">
+                <ion-icon name="log-out-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="addButton" (click)="openGrouplist()">
       <ion-card-header>
-        <ion-card-title>{{group.name}}</ion-card-title>
-        <ion-card-subtitle>{{group.description}}</ion-card-subtitle>
+        <ion-card-title>
+          <ion-icon name="log-in-outline" class="greyedOut"></ion-icon>
+        </ion-card-title>
       </ion-card-header>
     </ion-card>
   </ion-list>

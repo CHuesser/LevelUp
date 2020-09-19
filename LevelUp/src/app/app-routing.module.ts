@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
   },
   {
+    path: 'community-userlist/:meid',
+    loadChildren: () => import('./community-userlist/community-userlist.module').then( m => m.CommunityUserlistPageModule)
+  },
+  {
     path: 'challenge-detail/:id',
     loadChildren: () => import('./challenge-detail/challenge-detail.module').then( m => m.ChallengeDetailPageModule)
   },
@@ -61,7 +65,15 @@ const routes: Routes = [
   {
     path: 'foodsearchresult/:id',
     loadChildren: () => import('./foodsearchresult/foodsearchresult.module').then( m => m.FoodsearchresultPageModule)
+    path: 'community-grouplist/:meid',
+    loadChildren: () => import('./community-grouplist/community-grouplist.module').then( m => m.CommunityGrouplistPageModule)
+  },
+  {
+    path: 'community-creategroup',
+    loadChildren: () => import('./community-creategroup/community-creategroup.module').then( m => m.CommunityCreategroupPageModule)
   }
+
+
 ];
 @NgModule({
   imports: [

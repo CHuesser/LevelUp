@@ -7,6 +7,7 @@ export class Challenge {
     status: ChallengeStatus;
     category: ChallengeCategory;
     participants: number[];
+    //carbonfootprintSaved: number;
 }
 
 export enum ChallengeType {

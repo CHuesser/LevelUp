@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ChallengesPageRoutingModule } from './challenges-routing.module';
 
 import { ChallengesPage } from './challenges.page';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ChallengesPageRoutingModule
+    ChallengesPageRoutingModule,
+      HttpClientModule
   ],
   declarations: [ChallengesPage]
 })
