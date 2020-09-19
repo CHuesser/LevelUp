@@ -40,11 +40,12 @@
                 </ion-item>
             </ion-list>
 
-            <ion-button expand="full" color="secondary"(click)="openModal()">Add Participants</ion-button>
+            <ion-button expand="full" (click)="openModal()">Add Participants</ion-button>
 
         </div>
     </div>
 
+    <ion-button class="bottom" color="success" size="large" expand="full" (click)="saveChallenge()"  routerLink="/tabs/home" routerDirection="root" >Start Challange</ion-button>
 
 </ion-content>
 
