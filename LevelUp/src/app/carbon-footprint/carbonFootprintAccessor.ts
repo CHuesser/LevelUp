@@ -23,7 +23,7 @@ export class CarbonFootprintAccessor {
         {
             let zeroValue = new CarbonFootprintResponse();
             zeroValue.carbonFootprint = 0;
-            return new Promise((resolve, reject) => resolve(zeroValue));
+            return new Promise<CarbonFootprintResponse>((resolve, reject) => resolve(zeroValue));
         }
 
         const url = this.apiPrefix + 'activity=' + args.activity +

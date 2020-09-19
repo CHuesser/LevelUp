@@ -40,7 +40,7 @@ export class HomeTracksustainabilityPage implements OnInit {
     argsNotUsed.activityType = ActivityType.miles;
 
     carbonFootprintAccessor.getCarbonFootprint(argsNotUsed).then(r => notUsedCo2 = r.carbonFootprint).then(t => {
-      carbonFootprintAccessor.getCarbonFootprint(argsUsed).then(r => usedCo2 = r.carbonFootprint).then(i => this.savedCo2 = Math.round((notUsedCo2 - usedCo2) * 100) / 100).then( label =>
+      carbonFootprintAccessor.getCarbonFootprint(argsUsed).then(r2 => usedCo2 = r2.carbonFootprint).then(i => this.savedCo2 = Math.round((notUsedCo2 - usedCo2) * 100) / 100).then( label =>
       this.resultHidden = false);
     });
 
