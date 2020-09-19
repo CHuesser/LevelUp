@@ -27,8 +27,8 @@ const routes: Routes = [
     loadChildren: () => import('./community/community.module').then(m => m.CommunityPageModule)
   },
   {
-    path: 'userlist/:meid',
-    loadChildren: () => import('./userlist/userlist.module').then( m => m.UserlistPageModule)
+    path: 'community-userlist/:meid',
+    loadChildren: () => import('./community-userlist/community-userlist.module').then( m => m.CommunityUserlistPageModule)
   },
   {
     path: 'challenge-detail/:id',
@@ -61,7 +61,8 @@ const routes: Routes = [
   {
     path: 'community-grouplist/:meid',
     loadChildren: () => import('./community-grouplist/community-grouplist.module').then( m => m.CommunityGrouplistPageModule)
-  },  {
+  },
+  {
     path: 'community-creategroup',
     loadChildren: () => import('./community-creategroup/community-creategroup.module').then( m => m.CommunityCreategroupPageModule)
   }

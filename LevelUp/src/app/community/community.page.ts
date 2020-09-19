@@ -6,7 +6,7 @@ import { GroupServiceProvider } from '../providers/group-service/group-service';
 import { UserServiceProvider} from '../providers/user-service/user-service';
 import { ModalController } from '@ionic/angular';
 import { ModalPagePage } from '../modal-page/modal-page.page';
-import { UserlistPage } from '../userlist/userlist.page';
+import { CommunityUserlistPage } from '../community-userlist/community-userlist.page';
 import { CommunityGrouplistPage } from '../community-grouplist/community-grouplist.page';
 
 @Component({
@@ -58,7 +58,7 @@ export class CommunityPage implements OnInit {
 
     async openUserlist() {
         let userlistPage = await this.modalCtrl.create({
-            component: UserlistPage
+            component: CommunityUserlistPage
         });
 
         userlistPage.onWillDismiss()
