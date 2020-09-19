@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0308567-943a-47f8-a69f-444130913cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelUp/src/assets/images/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/assets/images/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LevelUp/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,23 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts">
+        <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -107,19 +89,19 @@
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/providers/bearState-service/bearState-service.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.html" />
-        <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.scss" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.html" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/LevelUp/src/app/tabs/tabs-routing.module.ts" />
+        <option value="$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1656" />
-    <option name="height" value="968" />
+    <option name="width" value="1134" />
+    <option name="height" value="922" />
   </component>
   <component name="ProjectId" id="1hhGiNVd0TrFQa7mTgPXvYlwCPc" />
   <component name="ProjectView">
@@ -152,6 +134,31 @@
               <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="LevelUp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="bearState-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LevelUp" type="b2602c69:ProjectViewProjectNode" />
@@ -227,13 +234,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34839000" />
+    <option name="totallyTimeSpent" value="35159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1656" height="968" extended-state="0" />
+    <frame x="0" y="23" width="1381" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26422018" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31764707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -246,7 +253,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.081050225" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18674698" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -657,20 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LevelUp/src/app/tabs/tabs.page.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -688,6 +681,20 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LevelUp/src/app/home/home.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
