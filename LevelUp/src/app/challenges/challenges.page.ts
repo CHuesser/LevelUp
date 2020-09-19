@@ -4,6 +4,7 @@ import {Challenge} from '../models/Challenge';
 import {ChallengeServiceProvider} from '../providers/challenge-service/challenge-service';
 import {ActivityType, CarbonFootprintArgs, Country, FuelType, Mode} from "../carbon-footprint/carbonFootprintArgs";
 import {CarbonFootprintAccessor} from "../carbon-footprint/carbonFootprintAccessor";
+import {HttpClient} from '@angular/common/http';
 
 @Component({
     selector: 'app-challenges',
@@ -19,7 +20,7 @@ export class ChallengesPage implements OnInit {
     ngOnInit() {
     }
 
-    constructor(private challengeServiceProvider: ChallengeServiceProvider) {
+    constructor(private challengeServiceProvider: ChallengeServiceProvider, public http: HttpClient) {
         this.challengeServiceProvider.getChallenges().then((challenges => {
             this.challenges = challenges;
             this.filteredChallenges = challenges;
@@ -55,7 +56,7 @@ export class ChallengesPage implements OnInit {
         args.fuelType = FuelType.motorGasoline;
         args.mode = Mode.petrolCar;
 
-        let carbonFootprintAccessor = new CarbonFootprintAccessor();
+        let carbonFootprintAccessor = new CarbonFootprintAccessor(this.http);
         let response = carbonFootprintAccessor.getCarbonFootprint(args);
         console.log(response);
     }
