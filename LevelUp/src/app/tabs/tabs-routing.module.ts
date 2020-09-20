@@ -44,6 +44,14 @@ const routes: Routes = [
         loadChildren: () => import('../home-trackfood/home-trackfood.module').then(m => m.HomeTrackfoodPageModule)
       },
       {
+        path: 'home-tracksustainability',
+        loadChildren: () => import('../home-tracksustainability/home-tracksustainability.module').then(m => m.HomeTracksustainabilityPageModule)
+      },
+      {
+        path: 'home-trackexercise',
+        loadChildren: () => import('../home-trackexercise/home-trackexercise.module').then(m => m.HomeTrackexercisePageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

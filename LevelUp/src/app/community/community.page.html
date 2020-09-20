@@ -19,13 +19,13 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title color="primary">{{me?.name}}</ion-card-title>
+      <ion-card-title color="tertiary">{{me?.name}}</ion-card-title>
       <ion-card-subtitle>Level: {{me?.level}}</ion-card-subtitle>
     </ion-card-header>
   </ion-card>
   <ion-list>
     <ion-list-header>
-      <ion-label color="secondary">Friends</ion-label>
+      <ion-label color="tertiary">Friends</ion-label>
     </ion-list-header>
     <ion-card *ngFor="let user of friends">
       <ion-grid>
@@ -38,7 +38,7 @@
           </ion-col>
           <ion-col>
             <ion-card-content>
-              <ion-button slot="end" (click)="removeFriend(user.id)">
+              <ion-button color="tertiary" slot="end" (click)="removeFriend(user.id)">
                 <ion-icon name="person-remove-outline"></ion-icon>
               </ion-button>
             </ion-card-content>
@@ -56,7 +56,7 @@
   </ion-list>
   <ion-list>
     <ion-list-header>
-      <ion-label color="secondary">Groups</ion-label>
+      <ion-label color="tertiary">Groups</ion-label>
     </ion-list-header>
     <ion-card *ngFor="let group of groups">
       <ion-grid>
