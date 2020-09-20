@@ -43,7 +43,6 @@ const routes: Routes = [
         path: 'home-trackfood',
         loadChildren: () => import('../home-trackfood/home-trackfood.module').then(m => m.HomeTrackfoodPageModule)
       },
-
       {
         path: '',
         redirectTo: '/tabs/home',

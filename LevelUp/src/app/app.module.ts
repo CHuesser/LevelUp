@@ -15,25 +15,27 @@ import {UserServiceProvider} from './providers/user-service/user-service';
 import {GroupServiceProvider} from './providers/group-service/group-service';
 import {ScoreServiceProvider} from './providers/score-service/score-service';
 import {StoredFoodServiceProvider} from './providers/stored-food-service/stored-food-service';
+import {IonicStorageModule} from '@ionic/storage';
 
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    ChallengeServiceProvider,
-    TipServiceProvider,
-    UserServiceProvider,
-    GroupServiceProvider,
-    BearStateServiceProvider,
-    StoredFoodServiceProvider,
-    ScoreServiceProvider,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    entryComponents: [],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, IonicStorageModule.forRoot()],
+    providers: [
+        StatusBar,
+        SplashScreen,
+        ChallengeServiceProvider,
+        TipServiceProvider,
+        UserServiceProvider,
+        GroupServiceProvider,
+        BearStateServiceProvider,
+        StoredFoodServiceProvider,
+        ScoreServiceProvider,
+        IonicStorageModule,
+        {provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
+    ],
+    bootstrap: [AppComponent]
 
 })
 export class AppModule {

@@ -1,22 +1,54 @@
 import {Injectable} from '@angular/core';
 import {Challenge, ChallengeStatus, ChallengeType} from '../../models/Challenge';
+import {Storage} from '@ionic/storage';
 
 
 @Injectable()
 export class ChallengeServiceProvider {
     activeChallenges: Challenge[];
 
-    constructor() {
+    constructor(private storage: Storage) {
         this.activeChallenges = [];
+        // this.storage.get('challenges').then(s => {
+        //    if (s) {
+        //        this.activeChallenges = JSON.parse(s);
+        //    }
+        // });
     }
 
     storeChallenge(challenge: Challenge) {
         this.activeChallenges.push(challenge);
+        this.storage.set('challenges', JSON.stringify(this.activeChallenges));
     }
 
     getActiveChallenge(userID: number): Challenge[] {
         return this.activeChallenges.filter(challenge => challenge.participants.indexOf(userID) !== -1);
 
+    }
+
+    getActiveChallenges(): Promise<Challenge[]> {
+        return new Promise((resolve, reject) => resolve([
+            {
+                id: 4,
+                title: 'Eat more Fruit',
+                description: 'Challenge to eat more fruits.',
+                image: './assets/images/apples-918953_640.jpg',
+                type: ChallengeType.daily,
+                status: ChallengeStatus.running,
+                category: 0,
+                participants: [0, 2]
+            },
+            {
+                id: 0,
+                title: 'Walk 10000 Steps',
+                description: 'Daily challenge to walk 10000 steps.',
+                image: './assets/images/walk-2635038_640.jpg',
+                type: ChallengeType.daily,
+                status: ChallengeStatus.created,
+                category: 0,
+                participants: [0, 1]
+            }
+        ]));
     }
 
 
